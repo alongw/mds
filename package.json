@@ -9,11 +9,7 @@
         "type": "git",
         "url": "https://github.com/alongw/mds.git"
     },
-    "scripts": {
-        "dev": "nodemon --config nodemon.json",
-        "start": "tsx ./src/app.ts",
-        "build": "npx webpack"
-    },
+    "scripts": {},
     "devDependencies": {
         "@types/node": "^20.11.19",
         "clean-webpack-plugin": "^4.0.0",
