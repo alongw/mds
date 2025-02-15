@@ -1,5 +1,3 @@
-import { sayHello } from '@mds/common'
+import { logger } from '@mds/common'
 
-console.log('Hello from service/app.ts')
-
-sayHello()
+logger.info('Hello World!')
