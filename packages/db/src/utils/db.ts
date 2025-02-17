@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize'
-import { config } from '@mds/common'
+import { config, logger } from '@mds/common'
 
 const { database } = config
 
@@ -22,6 +22,7 @@ const getSequlize = () => {
             }
         )
     }
+    logger.error('Invalid database dialect')
     throw new Error('Invalid database dialect')
 }
 
