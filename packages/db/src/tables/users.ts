@@ -7,7 +7,7 @@ export interface UserAttributes {
     user_email: string
 }
 
-export const User = sequelize.define<Model<UserAttributes>>('Users', {
+export const User = sequelize.define<Model<UserAttributes>>('User', {
     user_id: {
         type: DataTypes.STRING,
         primaryKey: true,
