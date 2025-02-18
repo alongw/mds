@@ -7,7 +7,8 @@ const getSequlize = () => {
     if (database.dialect === 'sqlite') {
         return new Sequelize({
             dialect: 'sqlite',
-            storage: database.storage
+            storage: database.storage,
+            logging: false
         })
     }
     if (database.dialect === 'mysql') {
@@ -18,7 +19,8 @@ const getSequlize = () => {
             {
                 host: database.mysql.host,
                 port: database.mysql.port,
-                dialect: 'mysql'
+                dialect: 'mysql',
+                logging: false
             }
         )
     }
