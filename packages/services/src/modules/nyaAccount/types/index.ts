@@ -9,3 +9,8 @@ export type GetUserTokenConfig = {
     scope: string
     response_type: string
 }
+
+export type GetStateConfig = {
+    userIp: string
+    userAgent: string
+}

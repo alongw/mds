@@ -1,6 +1,8 @@
-import type { InitNyaAccountConfig, GetUserTokenConfig } from './types'
+import type { InitNyaAccountConfig, GetUserTokenConfig, GetStateConfig } from './types'
 
 import { NyaAccountConfig } from './config'
+
+import { getStateCode as getStateCodeTool } from './utils/state'
 
 export class NyaAccount {
     #client_id: string
@@ -11,7 +13,9 @@ export class NyaAccount {
         this.#client_secret = config.client_secret
     }
 
-    getStateCode() {}
+    getStateCode(user: GetStateConfig) {
+        return getStateCodeTool(user.userIp, user.userAgent)
+    }
 
     getUserGetTokenRedirectUrl(config: GetUserTokenConfig) {
         const urlParams = new URLSearchParams({ client_id: this.#client_id, ...config })

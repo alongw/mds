@@ -7,7 +7,7 @@ import dayjs from 'dayjs'
 export const getStateCode = async (userIp: string, userAgent: string) => {
     const state_id = v4()
     const state_code = v4()
-    const state_scope = 'openid profile email'
+    const state_scope = 'nya_account_user_login'
     const state_expires = dayjs().add(10, 'minute').unix()
     const user_ip = userIp
     const user_agent = userAgent
