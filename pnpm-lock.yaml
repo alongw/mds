@@ -11,6 +11,9 @@ importers:
       axios:
         specifier: ^1.6.7
         version: 1.7.9
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       fs-extra:
         specifier: ^11.3.0
         version: 11.3.0
@@ -29,6 +32,9 @@ importers:
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
+      uuid:
+        specifier: ^11.1.0
+        version: 11.1.0
     devDependencies:
       '@types/fs-extra':
         specifier: ^11.0.4
@@ -144,6 +150,15 @@ importers:
       '@mds/common':
         specifier: workspace:^
         version: link:../common
+
+  packages/services:
+    dependencies:
+      '@mds/common':
+        specifier: workspace:^
+        version: link:../common
+      '@mds/db':
+        specifier: workspace:^
+        version: link:../db
 
 packages:
 
@@ -3356,6 +3371,10 @@ packages:
 
   util@0.12.5:
     resolution: {integrity: sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==}
+
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
@@ -6966,6 +6985,8 @@ snapshots:
       is-generator-function: 1.1.0
       is-typed-array: 1.1.15
       which-typed-array: 1.1.18
+
+  uuid@11.1.0: {}
 
   uuid@8.3.2: {}
 

@@ -6,6 +6,8 @@ export interface SSO_StateAttributes {
     state_code: string
     state_scope: string
     state_expires: number
+    user_ip: string
+    user_agent: string
 }
 
 export const SSO_State = sequelize.define<Model<SSO_StateAttributes>>('Channel', {
@@ -24,6 +26,14 @@ export const SSO_State = sequelize.define<Model<SSO_StateAttributes>>('Channel',
     },
     state_expires: {
         type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    user_ip: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    user_agent: {
+        type: DataTypes.STRING,
         allowNull: false
     }
 })
