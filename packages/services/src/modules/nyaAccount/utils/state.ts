@@ -28,7 +28,7 @@ export const getStateCode = async (userIp: string, userAgent: string) => {
         return state_code
     } catch (error) {
         logger.error(
-            `[SERVICES] [NYA_ACCOUNT] Error when create state code: ${state_code}, ${error}`
+            `[SERVICES] [NYA_ACCOUNT] Database error when create state code: ${state_code}, ${error}`
         )
         return null
     }
