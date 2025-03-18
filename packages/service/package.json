@@ -1,4 +1,4 @@
 {
-    "name": "@mds/common",
+    "name": "@mds/service",
     "main": "./src/index.ts"
 }
