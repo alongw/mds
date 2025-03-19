@@ -1,6 +1,9 @@
 import db from './utils/db'
-
-// export default db
-export { db as sequelize }
+import { syncDatabase } from './utils/sync'
 
 export * from './export'
+
+import('./utils/sync')
+
+// export default db
+export { db as sequelize, syncDatabase }

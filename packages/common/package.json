@@ -1,4 +1,5 @@
 {
     "name": "@mds/common",
-    "main": "./src/index.ts"
+    "main": "./src/index.ts",
+    "type": "module"
 }

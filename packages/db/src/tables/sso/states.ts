@@ -10,7 +10,7 @@ export interface SSO_StateAttributes {
     user_agent: string
 }
 
-export const SSO_State = sequelize.define<Model<SSO_StateAttributes>>('Channel', {
+export const SSO_State = sequelize.define<Model<SSO_StateAttributes>>('SSO_State', {
     state_id: {
         type: DataTypes.STRING,
         primaryKey: true,

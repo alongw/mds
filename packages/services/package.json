@@ -1,6 +1,7 @@
 {
     "name": "@mds/services",
     "main": "./src/index.ts",
+    "type": "module",
     "dependencies": {
         "@mds/common": "workspace:^",
         "@mds/db": "workspace:^"
