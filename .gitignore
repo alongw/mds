@@ -2,7 +2,8 @@
 config.yaml
 data
 
-__test__.ts
+# __test__
+
 
 # Logs
 logs
@@ -28,3 +29,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+apps/service/src/__test__.ts
+apps/service/src/__test__.ts
