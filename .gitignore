@@ -2,6 +2,7 @@
 config.yaml
 data
 
+__test__.ts
 
 # Logs
 logs
