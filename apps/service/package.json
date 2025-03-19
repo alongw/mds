@@ -7,5 +7,9 @@
     },
     "devDependencies": {
         "@mds/common": "workspace:^"
+    },
+    "dependencies": {
+        "@mds/db": "workspace:^",
+        "@mds/services": "workspace:^"
     }
 }

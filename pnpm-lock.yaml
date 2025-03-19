@@ -71,6 +71,13 @@ importers:
         version: 5.7.3
 
   apps/service:
+    dependencies:
+      '@mds/db':
+        specifier: workspace:^
+        version: link:../../packages/db
+      '@mds/services':
+        specifier: workspace:^
+        version: link:../../packages/services
     devDependencies:
       '@mds/common':
         specifier: workspace:^
