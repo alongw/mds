@@ -21,4 +21,6 @@ export class NyaAccount {
         const urlParams = new URLSearchParams({ client_id: this.#client_id, ...config })
         return `${NyaAccountConfig.baseUrl}/authorize?${urlParams}`
     }
+
+    getAccessToken(code: string) {}
 }
