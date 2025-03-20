@@ -8,7 +8,8 @@ logger.info('Hello World!')
 
 const nya = new NyaAccount({
     client_id: '123',
-    client_secret: '456'
+    client_secret: '456',
+    redirect_uri: 'http://localhost:3000'
 })
 
 const state = await nya.getStateCode({
