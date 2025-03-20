@@ -4,7 +4,7 @@ import { NyaAccountConfig } from './config'
 
 import { getStateCode as getStateCodeTool } from './utils/state'
 
-import { getUserInfo, getUserToken } from './modules/userInfo'
+import { getUserEmail, getUserNormalInfo, getUserToken } from './modules/userInfo'
 
 export class NyaAccount {
     #client_id: string
@@ -35,5 +35,13 @@ export class NyaAccount {
             redirect_uri: this.#redirect_uri
         }
         return getUserToken(config)
+    }
+
+    getUserInfo(token: string) {
+        return getUserNormalInfo(token)
+    }
+
+    getUserEmail(token: string) {
+        return getUserEmail(token)
     }
 }
