@@ -14,3 +14,14 @@ export interface GetTokenResponse {
     refresh_token: string
     scope: string
 }
+
+export interface UserInfoResponse {
+    uid: string
+    nickname: string
+    status: number
+    avatar: string
+}
+
+export interface UserEmailResponse {
+    email: string
+}
