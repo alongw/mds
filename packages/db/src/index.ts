@@ -3,6 +3,7 @@ import { syncDatabase } from './utils/sync'
 
 export * from './export'
 
+import('./assocs')
 import('./utils/sync')
 
 // export default db
