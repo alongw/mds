@@ -12,11 +12,4 @@ const nya = new NyaAccount({
     redirect_uri: 'http://localhost:3000'
 })
 
-const state = await nya.getStateCode({
-    userIp: '',
-    userAgent: ''
-})
-
-console.log(`State code: ${state}`)
-
 export default {}
